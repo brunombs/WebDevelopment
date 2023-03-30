@@ -1,0 +1,38 @@
+h1 {
+    color:red;
+    font-size: 100px;
+    height: 250px;
+    width: 500px;
+}
+
+
+img {
+    background-color: red;
+    height: 250px;
+    width: 500px;
+}
+
+img:hover
+    {
+        background-color: gold;
+    }
+
+p {
+    color: blue;
+}
+
+.bacon {
+    background-color: red;
+}
+
+.car {
+    background-color: green;
+}
+
+#heading {
+    color: blue;
+}
+
+.circular {
+    border-radius: 20%;
+}
