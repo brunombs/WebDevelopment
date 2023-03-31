@@ -1,0 +1,31 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    margin: 50px auto 50px auto;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.início{
+    background-color: lightgrey;
+    position: relative;
+    padding-top: 100px;
+}
+
+.img{
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+    left: 40%;
+  }
