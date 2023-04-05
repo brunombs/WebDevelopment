@@ -1,31 +1,51 @@
-body{
-    background-color: lightcyan;
+/* Estilos para o cabeçalho */
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
-h1{
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+/* Estilos para a seção de Projetos */
+#projetos {
+    margin-top: 80px;
+    padding: 40px;
+}
+
+h1 {
     text-align: center;
-    font-size: 5rem;
-    margin: 50px auto 50px auto;
+    padding: 3%;
 }
 
-h2{
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para a seção de Contato */
+#contato {
+    margin-top: 80px;
+    padding: 40px;
     text-align: center;
 }
 
-p{
-    text-align: center;
-}
+/* Outros estilos personalizados */
+/* ... */
 
-.início{
-    background-color: lightgrey;
-    position: relative;
-    padding-top: 100px;
+.img-projeto{
+    width: 20rem;
+    align-items: center;
 }
-
-.img{
-    width: 250px;
-    height: auto;
-    display: block;
-    margin-bottom: 20px;
-    position: relative;
-    left: 40%;
-  }
