@@ -2,6 +2,9 @@
 
 <p>Este repositório foi criado para documentar o meu progresso no curso "The Complete Web Development Bootcamp" da Udemy. Aqui, você poderá encontrar os projetos que desenvolvi durante o curso, assim como os códigos que utilizei.</p>
 
+Para conferir o meu progresso no curso, visite o [meu site](https://brunombs.github.io/WebDevelopment/).
+
+
 <h2>Conteúdo do Curso</h2>
 
 <ul>
