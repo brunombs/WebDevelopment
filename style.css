@@ -1,51 +1,76 @@
-/* Estilos para o cabeçalho */
 header {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
-}
+    height: 50px;
+  }
 
-nav ul {
+  .navbar {
+    margin-top: 0;
+  }
+  
+  nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-nav li {
+  }
+  
+  nav li {
     display: inline;
     margin-right: 10px;
-}
-
-/* Estilos para a seção de Projetos */
-#projetos {
+  }
+  
+  /* Estilos para a seção de Projetos */
+  #projetos {
     margin-top: 80px;
     padding: 40px;
-}
-
-h1 {
+  }
+  
+  h1 {
     text-align: center;
     padding: 3%;
-}
-
-.projetos {
+  }
+  
+  .projetos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/* Estilos para a seção de Contato */
-#contato {
+  }
+  
+  /* Estilos para a seção de Contato */
+  #contato {
     margin-top: 80px;
     padding: 40px;
     text-align: center;
-}
-
-/* Outros estilos personalizados */
-/* ... */
-
-.img-projeto{
+  }
+  
+  /* Outros estilos personalizados */
+  /* ... */
+  
+  .img-projeto {
     width: 20rem;
     align-items: center;
-}
+    width: 200px;
+    height: 200px;
+  }
+
+  .img-projeto:hover {
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(1.2); 
+    transition:initial
+  }
+
+  .projeto{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  body{
+    background-color: black;
+  }
