@@ -1,76 +1,96 @@
+/* Estilos gerais */
+body {
+  background-color: #272838;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Estilos do cabeçalho */
 header {
-    background-color: black;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 50px;
-  }
+  background-color: #1B2432;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
 
-  .navbar {
-    margin-top: 0;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  /* Estilos para a seção de Projetos */
-  #projetos {
-    margin-top: 80px;
-    padding: 40px;
-  }
-  
-  h1 {
-    text-align: center;
-    padding: 3%;
-  }
-  
-  .projetos {
+.navbar {
+  margin-top: 0;
+}
+
+.navbar-brand {
+  margin-bottom: 0;
+}
+
+.nav {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  /* Estilos para a seção de Contato */
-  #contato {
-    margin-top: 80px;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Outros estilos personalizados */
-  /* ... */
-  
-  .img-projeto {
-    width: 20rem;
+    justify-content: space-between;
     align-items: center;
-    width: 200px;
-    height: 200px;
+    background-color: #7E7F9A;
+    padding: 10px;
+    font-size: 18px;
   }
+  
+  
+.nav-link:hover {
+color: #fff;
+background-color: #007bff;
+border-radius: 5px;
+}
 
-  .img-projeto:hover {
-    background-color: yellow;
-    border: 1px solid black;
-    transform: scale(1.2); 
-    transition:initial
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  .projeto{
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-    background-color: white;
-  }
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
 
-  body{
-    background-color: black;
-  }
+/* Estilos da seção de Projetos */
+#projetos {
+  margin-top: 80px;
+  padding: 40px;
+}
+
+h1 {
+  color: white;
+  padding: 3%;
+  text-align: center;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projeto {
+  background-color: #F9F8F8;
+  border: 1px solid #ccc;
+  border-radius: 45px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.img-projeto {
+  align-items: center;
+  height: 200px;
+  width: 200px;
+}
+
+.img-projeto:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos da seção de Contato */
+#footer {
+  margin-top: 80px;
+  padding: 40px;
+  text-align: center;
+}
