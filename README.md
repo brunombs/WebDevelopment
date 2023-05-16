@@ -28,6 +28,17 @@ Para conferir o meu progresso no curso, visite o [meu site](https://brunombs.git
   <li>Projeto 4 - TinDog - Um tinder para cachorros.</li>
 </ul>
 
+<ol>
+	<li><a href="./0 - CV">Projeto 0 - Currículo em HTML</a></li>
+	<li><a href="./1- FirstHtml">Projeto 1 - Currículo em HTML/CSS</a></li>
+	<li><a href="./2- CSS - Bacon Fansite">Projeto 2 - Bacon Fansite</a></li>
+	<li><a href="./3- CSS - My Site">Projeto 3 - Meu site</a></li>
+	<li><a href="./4- TinDog">Projeto 4 - TinDog - Um tinder para cachorros</a></li>
+ 	<li><a href="./5- The Dice Game">Projeto 5 - The Dice Game</a></li>
+	<li><a href="./6- Drum Kit">Projeto 6 - Drum Kit</a></li>
+	<li><a href="./7- Simon Game">Projeto 7 - Simon Game</a></li>
+</ol>
+
 <h2>Como Contribuir</h2>
 
 <p>Este é um repositório pessoal, mas se você quiser colaborar com algum projeto, fique à vontade para fazer um fork deste repositório e submeter um pull request.</p>
