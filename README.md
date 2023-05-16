@@ -20,14 +20,6 @@ Para conferir o meu progresso no curso, visite o [meu site](https://brunombs.git
 
 <h2>Projetos</h2>
 
-<ul>
-  <li>Projeto 0 - Currículo em HTML</li>
-  <li>Projeto 1 - Currículo em HTML/CSS</li>
-  <li>Projeto 2 - Bacon Fansite</li>
-  <li>Projeto 3 - Meu site</li>
-  <li>Projeto 4 - TinDog - Um tinder para cachorros.</li>
-</ul>
-
 <ol>
 	<li><a href="./0 - CV">Projeto 0 - Currículo em HTML</a></li>
 	<li><a href="./1- FirstHtml">Projeto 1 - Currículo em HTML/CSS</a></li>
