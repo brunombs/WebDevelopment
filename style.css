@@ -1,6 +1,6 @@
 /* Estilos gerais */
 body {
-  background-color: #272838;
+  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
@@ -16,44 +16,8 @@ header {
   width: 100%;
 }
 
-.navbar {
-  margin-top: 0;
-}
-
-.navbar-brand {
-  margin-bottom: 0;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7E7F9A;
-    padding: 10px;
-    font-size: 18px;
-  }
-  
-  
-.nav-link:hover {
-color: #fff;
-background-color: #007bff;
-border-radius: 5px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin-right: 10px;
-}
-
 /* Estilos da seção de Projetos */
 #projetos {
-  margin-top: 80px;
   padding: 40px;
 }
 
@@ -82,10 +46,20 @@ h1 {
   align-items: center;
   height: 200px;
   width: 200px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
 .img-projeto:hover {
   transform: scale(1.1);
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #e6f0ff, #ccf5ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Estilos da seção de Contato */
