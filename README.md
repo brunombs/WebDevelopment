@@ -29,6 +29,7 @@ Para conferir o meu progresso no curso, visite o [meu site](https://brunombs.git
  	<li><a href="./5- The Dice Game">Projeto 5 - The Dice Game</a></li>
 	<li><a href="./6- Drum Kit">Projeto 6 - Drum Kit</a></li>
 	<li><a href="./7- Simon Game">Projeto 7 - Simon Game</a></li>
+	<li><a href="./8- Weather Project">Projeto 8 - Weather Project</a></li>
 </ol>
 
 <h2>Como Contribuir</h2>
