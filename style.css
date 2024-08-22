@@ -1,85 +1,179 @@
 /* Estilos gerais */
 body {
-  background-image: linear-gradient(to bottom, #663399, #4682B4, #40E0D0);
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  color: #333;
-  line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Estilos do cabeçalho */
 header {
-  background-color: rgba(27, 36, 50, 0.9);
-  border-bottom: 1px solid #ccc;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Estilos da seção de Sobre */
+#sobre {
+    padding: 100px 0 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    margin-top: 56px;
+}
+
+#sobre h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    color: #f0f0f0;
+    font-size: 1.1rem;
 }
 
 /* Estilos da seção de Projetos */
 #projetos {
-  padding: 80px 40px;
-}
-
-h1 {
-  color: white;
-  padding: 3%;
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
-}
-
-.projeto {
-  background-color: #F9F8F8;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.projeto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.img-projeto {
-  height: 200px;
-  width: 200px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  transition: transform 0.3s ease;
-}
-
-.img-projeto:hover {
-  transform: scale(1.05);
+    padding: 50px 0;
 }
 
 .gradient-text {
-  background-image: linear-gradient(to right, #e6f0ff, #ccf5ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 3em;
-  font-weight: bold;
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#filtros {
+    margin-bottom: 30px;
+}
+
+.filtro {
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.filtro:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.projeto.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.projeto.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.img-projeto {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.projeto.card:hover .img-projeto {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 0.75rem 1.25rem;
 }
 
 /* Estilos da seção de Contato */
-#footer {
-  background-color: #1B2432;
-  color: white;
-  margin-top: 80px;
-  padding: 40px;
-  text-align: center;
+#contato {
+    background-color: #343a40;
+    color: #fff;
+    padding: 50px 0;
 }
 
-#footer a {
-  color: #40E0D0;
-  text-decoration: none;
+#contato h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
 }
 
-#footer a:hover {
-  text-decoration: underline;
+#contato a {
+    color: #17a2b8;
+    transition: color 0.3s ease;
+}
+
+#contato a:hover {
+    color: #138496;
+    text-decoration: none;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #17a2b8;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #138496;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .gradient-text {
+        font-size: 2.5rem;
+    }
+    
+    #sobre, #projetos, #contato {
+        padding: 30px 0;
+    }
 }
