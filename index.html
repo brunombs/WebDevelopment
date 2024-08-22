@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <title>Meus Projetos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno - Meus Projetos</title>
+    <meta name="description" content="Portfólio de projetos de desenvolvimento web de Bruno">
+    <meta name="keywords" content="desenvolvimento web, HTML, CSS, JavaScript, projetos">
+    <meta name="author" content="Bruno">
+    
     <!-- CSS BootStrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Script BootStrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- Font -->
@@ -18,62 +19,103 @@
 </head>
 
 <body>
-    <section id="projetos">
-        <h1 class="gradient-text">Projetos</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Bruno</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Sobre Mim</h2>
+                <p class="text-center">Olá! Sou Bruno, um desenvolvedor web apaixonado por criar soluções inovadoras e funcionais.</p>
+            </div>
+        </section>
+
+        <section id="projetos" class="py-5">
+            <div class="container">
+                <h1 class="gradient-text text-center mb-5">Projetos</h1>
+                
+                <div id="filtros" class="text-center mb-4">
+                    <button class="btn btn-outline-primary filtro" data-filter="all">Todos</button>
+                    <button class="btn btn-outline-primary filtro" data-filter="html">HTML</button>
+                    <button class="btn btn-outline-primary filtro" data-filter="css">CSS</button>
+                    <button class="btn btn-outline-primary filtro" data-filter="js">JavaScript</button>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+                    <div class="col" itemscope itemtype="http://schema.org/CreativeWork" data-categoria="html">
+                        <div class="projeto card h-100">
+                            <h2 class="card-header" itemprop="name">CV HTML</h2>
+                            <a href="0 - CV/index.html" itemprop="url" aria-label="Ver projeto CV HTML">
+                                <img class="card-img-top img-projeto" src="images/0.png" alt="Captura de tela do projeto CV HTML" itemprop="image">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text" itemprop="description">Currículo feito em HTML</p>
+                                <p class="card-text"><small class="text-muted">Tecnologias: HTML</small></p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary btn-sm">Ver código</a>
+                                <a href="#" class="btn btn-secondary btn-sm">Demo ao vivo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contato" class="py-5 bg-dark text-white">
         <div class="container">
-            <div class="row row-cols-1 justify-content-center text-center">
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">CV HTML</h2>
-                    <a href="0 - CV/index.html"><img class="img-projeto" src="images/0.png" alt="Projeto 1"></a><br>
-                    <p class="descricao-projeto">Currículo feito em HTML</p>
+            <h2 class="text-center mb-4">Contato</h2>
+            <p class="text-center">GitHub: <a href="https://github.com/brunombs" target="_blank" rel="noopener noreferrer">brunombs</a></p>
+            
+            <form action="submit_form.php" method="POST" class="mt-4">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
                 </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">CV HTML/CSS</h2>
-                    <a href="1- FirstHtml/index.html"><img class="img-projeto" src="images/1.png" alt="Projeto 2"></a><br>
-                    <p class="descricao-projeto">Currículo feito em HTML com CSS</p>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Bacon</h2>
-                    <a href="2- CSS - Bacon Fansite/index.html"><img class="img-projeto" src="images/2.png" alt="Projeto 3"></a><br>
-                    <p class="descricao-projeto">Página feita em HTML e CSS mostrando adoração a Bacon</p>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
                 </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Bruno</h2>
-                    <a href="3- CSS - My Site/index.html"><img class="img-projeto" src="images/3.png" alt="Projeto 4"></a><br>
-                    <p class="descricao-projeto">Minha página</p>
-                </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">TinDog</h2>
-                    <a href="4- TinDog/index.html"><img class="img-projeto" src="images/4.png" alt="Projeto 5"></a><br>
-                    <p class="descricao-projeto">Página de Tinder para cachorros feita em HTML e CSS com auxílio de
-                        BOOTSTRAP.</p>
-                </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Dice Game</h2>
-                    <a href="5- The Dice Game/index.html"><img class="img-projeto" src="images/5.png" alt="Projeto 6"></a><br>
-                    <p class="descricao-projeto">Página com dois dados funcionais em JS, feita utilizando conceitos de DOM.</p>
-                </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Drum Kit</h2>
-                    <a href="6- Drum Kit/index.html"><img class="img-projeto" src="images/6.png" alt="Projeto 7"></a><br>
-                    <p class="descricao-projeto">Site com baterias que tocam sons ao clicar.</p>
-                </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Simon Game</h2>
-                    <a href="7- Simon Game/index.html"><img class="img-projeto" src="images/7.png" alt="Projeto 8"></a><br>
-                    <p class="descricao-projeto">Simon Game é um jogo de memória que desafia os jogadores a repetirem sequências cada vez mais longas de cores e sons.</p>
-                </div>
-                <div class="projeto col-sm-6 col-md-4 col-lg-3">
-                    <h2 class="titulo-projeto">Weather Project</h2>
-                    <a href="8- Weather Project/index.html"><img class="img-projeto" src="images/8.png" alt="Projeto 8"></a><br>
-                    <p class="descricao-projeto">Esse é um site para verificar as condições climáticas das cidades.</p>
-                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
-    </section>
-    <section id="footer">
-        <h1>Contato</h1>
-        <p>https://github.com/brunombs</p>
-        </div>
-    </section>
+    </footer>
+
+    <!-- Script BootStrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Seu script personalizado -->
+    <script src="script.js"></script>
 </body>
+
 </html>
