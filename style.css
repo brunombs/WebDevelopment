@@ -1,70 +1,85 @@
 /* Estilos gerais */
 body {
-  background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+  background-image: linear-gradient(to bottom, #663399, #4682B4, #40E0D0);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Estilos do cabeçalho */
 header {
-  background-color: #1B2432;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  position: relative;
+  background-color: rgba(27, 36, 50, 0.9);
+  border-bottom: 1px solid #ccc;
+  position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
 }
 
 /* Estilos da seção de Projetos */
 #projetos {
-  padding: 40px;
+  padding: 80px 40px;
 }
 
 h1 {
   color: white;
   padding: 3%;
   text-align: center;
-}
-
-.projetos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
 }
 
 .projeto {
   background-color: #F9F8F8;
   border: 1px solid #ccc;
-  border-radius: 45px;
+  border-radius: 15px;
   margin-bottom: 30px;
-  margin-left: 20px;
   padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 .img-projeto {
-  align-items: center;
   height: 200px;
   width: 200px;
-  border-radius: 20px;
-  border: 1px solid black;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
 }
 
 .img-projeto:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .gradient-text {
   background-image: linear-gradient(to right, #e6f0ff, #ccf5ff);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-size: 3em;
+  font-weight: bold;
 }
 
 /* Estilos da seção de Contato */
 #footer {
+  background-color: #1B2432;
+  color: white;
   margin-top: 80px;
   padding: 40px;
   text-align: center;
+}
+
+#footer a {
+  color: #40E0D0;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
 }
